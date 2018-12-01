@@ -6,3 +6,8 @@ def test_cashback_under_limit():
 
     assert 50 == result    #5% ot 1000
 
+def test_cashback_above_limit():
+    result = cashback(1_000_000)
+
+    assert 3_000 == result
+
